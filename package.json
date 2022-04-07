@@ -13,8 +13,8 @@
     "test:staged": "npm t -- --findRelatedTests",
     "test:coverage": "npm t -- --coverage"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Douglas Dennys <douglasdennys45@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@faker-js/faker": "^6.1.2",
     "@types/jest": "^27.4.1",
@@ -27,6 +27,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
     "jest": "^27.5.1",
+    "jest-mock-extended": "^2.0.5",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
