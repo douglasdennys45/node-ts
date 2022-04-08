@@ -2,11 +2,7 @@
   "name": "boilerplate-node",
   "version": "1.0.0",
   "description": "Boilerplate to streamline the development process with some out-of-the-box use cases",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
+  "main": "build/index.js",
   "scripts": {
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm t -- --watchAll",
@@ -15,9 +11,15 @@
   },
   "author": "Douglas Dennys <douglasdennys45@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "mongodb": "^4.5.0",
+    "restana": "^4.9.3"
+  },
   "devDependencies": {
     "@faker-js/faker": "^6.1.2",
+    "@shelf/jest-mongodb": "^2.2.1",
     "@types/jest": "^27.4.1",
+    "@types/mongodb": "^4.0.7",
     "@types/node": "^17.0.23",
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",

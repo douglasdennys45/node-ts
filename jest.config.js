@@ -10,6 +10,7 @@ module.exports = {
     '@/test/(.+)': '<rootDir>/test/$1',
     '@/(.+)': '<rootDir>/lib/$1'
   },
+  preset: '@shelf/jest-mongodb',
   testMatch: ['**/*.test.ts'],
   roots: [
     '<rootDir>/lib',
