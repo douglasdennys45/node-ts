@@ -1,14 +1,9 @@
-type ErrorRequest = {
-  code: string
-  detail: string
-  status: number
-  title: string
-}
+import { ErrorResponse } from '@/entities/types'
 
 export class Error {
-  constructor (private readonly error: ErrorRequest) {}
+  constructor (private readonly error: ErrorResponse) {}
 
-  generateError (): ErrorRequest {
+  generateError (): ErrorResponse {
     return this.error
   }
 }
