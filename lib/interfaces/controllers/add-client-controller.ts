@@ -1,5 +1,5 @@
 import { AddClient } from '@/usecases'
-import { HttpRequest, HttpResponse, response } from '@/interfaces/gateways'
+import { HttpRequest, HttpResponse, response } from '@/interfaces/presentations'
 import { Controller } from './controller'
 
 export class AddClientController implements Controller {

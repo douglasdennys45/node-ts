@@ -1,4 +1,4 @@
-import { HttpRequest } from '@/interfaces/gateways'
+import { HttpRequest } from '@/interfaces/presentations'
 import { Controller } from '@/interfaces/controllers'
 
 export const adaptRoute = (controller: Controller) => {

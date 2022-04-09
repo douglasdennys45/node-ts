@@ -9,23 +9,15 @@ Boilerplate to streamline the development process with some out-of-the-box use c
 ├── docs                    # OpenAPI documentation folder
 ├── lib                     # Application source code folder
 │   ├── entities            # Class folder and business rule validators
-│   │   └── validators      # Business rules validation folder
+│   │   └── errors          # Class default errors
 │   ├── infrastructure      # Folder is made up of tools like database, UI, etc. In this layer, the idea is to have as little code as possible, just enough to interconnect the layers and inject the necessary implementations into the inner layers.
 │   │   ├── server          # Rest API configuration folder
-│   │   ├── oauth           # API authentication and authorization configuration folder
 │   │   ├── database        # Database configuration folder
-│   │   ├── http            # HTTP calls config folder
-│   │   ├── storage         # Message read and publish configuration folder has topics and queues
-│   │   └── queue           # Storage usage configuration folder
 │   ├── interfaces          # Folder for the purpose of converting data in the most accessible and convenient way possible for the entities and use cases
 │   │   ├── controllers     # Folder where it will receive the information formatted by the presentation and will process the use case information
 │   │   └── presentations   # Folder where you will convert standard input and output data
 │   ├── ports               # Folder that will indirectly connect the business layer with the external layer
-│   │   ├── oauth           # OAuth interface folder, where it will link the business layer with the outer layer
-│   │   ├── http            # HTTP interface folder, where it will link the business layer with the external layer
-│   │   ├── repository      # Repository interface folder, where it will link the business layer with the external layer
-│   │   ├── storage         # Storage interface folder, where it will link the business layer with the external layer
-│   │   └── queue           # Queue interface folder, where it will link the business layer with the external layer
+│   │   ├── repositories    # Repository interface folder, where it will link the business layer with the external layer
 │   └── usecases            # Folder that contains the most system-specific business rules. This is where all the system use cases are implemented
 ```
 
@@ -34,6 +26,7 @@ Boilerplate to streamline the development process with some out-of-the-box use c
 To run the project, install the following software
 
 * Docker >= 1.40+
+* Node.JS >= 16+
 
 ## Run project
 
