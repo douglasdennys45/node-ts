@@ -1,5 +1,5 @@
 import { Error } from '@/entities/errors'
-import { ClientRequest, ClientResponse, ErrorResponse } from '@/entities/types'
+import { ClientRequest, ClientResponse, Error as TypeError } from '@/entities/types'
 
 export class Client {
   constructor (private readonly client: ClientRequest) {}
@@ -12,7 +12,7 @@ export class Client {
     return { value: this.client }
   }
 
-  private isValidFields (): ErrorResponse | null {
+  private isValidFields (): TypeError | null {
     let errors: string[] = []
     if (!this.client.name) errors = [...errors, 'Name required']
     if (!this.client.type) errors = [...errors, 'Type required']
