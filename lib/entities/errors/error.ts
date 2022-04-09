@@ -1,9 +1,9 @@
-import { ErrorResponse } from '@/entities/types'
+import { Error as TypeError } from '@/entities/types'
 
 export class Error {
-  constructor (private readonly error: ErrorResponse) {}
+  constructor (private readonly error: TypeError) {}
 
-  generateError (): ErrorResponse {
+  generateError (): TypeError {
     return this.error
   }
 }

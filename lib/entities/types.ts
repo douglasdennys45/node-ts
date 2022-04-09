@@ -9,7 +9,7 @@ export type ClientRequest = {
   type?: string
 }
 
-export type ErrorResponse = {
+export type Error = {
   code: string
   detail: string
   status: number
@@ -18,5 +18,5 @@ export type ErrorResponse = {
 
 export type ClientResponse = {
   value?: ClientRequest
-  error?: ErrorResponse
+  error?: Error
 }
