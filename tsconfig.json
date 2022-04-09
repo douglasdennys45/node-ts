@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "noImplicitOverride": true,
-    "removeComments": true,
+    // "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "rootDirs": ["lib", "test"],

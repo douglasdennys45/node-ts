@@ -1,25 +1,21 @@
 version: "3.7"
 
 services:
-    app:
-      build:
-        context: .
-        dockerfile: Dockerfile
-      ports:
-        - "8080:8080"
-      restart: unless-stopped
-      depends_on:
-        - db
-      networks:
-        - golang
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5050:5050"
+    restart: unless-stopped
+    environment:
+      - MONGO_URL=mongodb://db:27017/boilerplate
+      - APP_ENV=dev
+    depends_on:
+      - db
 
   db:
     image: mongo
     restart: always
     ports:
       - "27017:27017"
-    networks:
-      - golang
-
-networks:
-  golang:

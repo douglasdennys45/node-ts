@@ -4,6 +4,12 @@
   "description": "Boilerplate to streamline the development process with some out-of-the-box use cases",
   "main": "build/index.js",
   "scripts": {
+    "clean": "rimraf dist",
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register lib/infrastructure/server/api/index.ts",
+    "start": "node build/infrastructure/server/api/index.js",
+    "build": "npm run clean && tsc -p tsconfig-build.json",
+    "check": "npm-check -s -u",
+    "lint": "eslint 'src/**' --fix",
     "test": "jest --passWithNoTests --no-cache --runInBand --forceExit",
     "test:watch": "npm t -- --watchAll",
     "test:staged": "npm t -- --findRelatedTests",
@@ -40,6 +46,8 @@
     "supertest": "^6.2.2",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.14.1",
     "typescript": "^4.6.3"
   }
 }
