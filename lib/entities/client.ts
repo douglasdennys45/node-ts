@@ -1,27 +1,5 @@
 import { Error } from '@/entities/errors'
-
-type Document = {
-  type: string
-  number: string
-}
-
-type ClientRequest = {
-  name?: string
-  document?: Document[]
-  type?: string
-}
-
-type ErrorResponse = {
-  code: string
-  detail: string
-  status: number
-  title: string
-}
-
-type ClientResponse = {
-  value?: ClientRequest
-  error?: ErrorResponse
-}
+import { ClientRequest, ClientResponse, ErrorResponse } from '@/entities/types'
 
 export class Client {
   constructor (private readonly client: ClientRequest) {}
