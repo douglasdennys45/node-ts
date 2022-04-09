@@ -2,7 +2,11 @@
 module.exports = {
   collectCoverageFrom: [
     '<rootDir>/lib/**/*.ts',
-    '!<rootDir>/lib/**/index.ts'
+    '!<rootDir>/lib/**/index.ts',
+    '!<rootDir>/lib/infrastructure/server/api/adapters/*.ts',
+    '!<rootDir>/lib/infrastructure/server/api/config/env.ts',
+    '!<rootDir>/lib/infrastructure/server/api/config/module-alias.ts',
+    '!<rootDir>/lib/infrastructure/server/api/factories/infrastructure/database/mongodb/mongo-connection.ts'
   ],
   coverageDirectory: 'coverage',
   coverageProvider: 'babel',
