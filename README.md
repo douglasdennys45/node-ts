@@ -7,7 +7,7 @@ Boilerplate to streamline the development process with some out-of-the-box use c
 
 ```bash
 ├── docs                    # OpenAPI documentation folder
-├── lib                     # Application source code folder
+├── src                     # Application source code folder
 │   ├── entities            # Class folder and business rule validators
 │   │   └── errors          # Class default errors
 │   ├── infrastructure      # Folder is made up of tools like database, UI, etc. In this layer, the idea is to have as little code as possible, just enough to interconnect the layers and inject the necessary implementations into the inner layers.

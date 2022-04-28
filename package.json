@@ -4,7 +4,7 @@
   "description": "Boilerplate to streamline the development process with some out-of-the-box use cases",
   "main": "build/index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register lib/infrastructure/server/api/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/infrastructure/server/api/index.ts",
     "start": "node build/infrastructure/server/api/index.js",
     "clean": "rimraf dist",
     "prepare": "husky install",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^6.1.2",
-    "@shelf/jest-mongodb": "^2.2.1",
+    "@shelf/jest-mongodb": "^2.2.2",
     "@types/body-parser": "^1.19.2",
     "@types/cors": "^2.8.12",
     "@types/jest": "^27.4.1",
@@ -43,7 +43,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
     "husky": "^7.0.4",
-    "jest": "^27.5.1",
+    "jest": "^27.4.5",
     "jest-mock-extended": "^2.0.5",
     "lint-staged": "^12.3.7",
     "supertest": "^6.2.2",
