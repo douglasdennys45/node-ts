@@ -16,5 +16,5 @@ export const adaptRoute: Adapter = controller => async (req, res) => {
   if (status < 400) {
     return res.status(status).json({ data: value })
   }
-  return res.status(status).json({ error: error })
+  return res.status(status).json({ error })
 }

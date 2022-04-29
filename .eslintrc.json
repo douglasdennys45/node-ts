@@ -17,10 +17,8 @@
   "rules": {
     "no-undef": "off",
     "no-useless-constructor": "off",
-    "node/handle-callback-err": "off",
-    "no-unused-vars": "off",
     "no-redeclare": "off",
     "no-use-before-define": "off",
-    "node/no-path-concat": "off"
+    "n/handle-callback-err": "off"
   }
 }
