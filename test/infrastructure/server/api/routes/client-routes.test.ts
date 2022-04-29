@@ -1,8 +1,9 @@
-import request from 'supertest'
-import { Collection } from 'mongodb'
-import { faker } from '@faker-js/faker'
-import app from '@/infrastructure/server/api/config/app'
 import { MongoConnection } from '@/infrastructure/database/mongodb'
+import { app } from '@/infrastructure/server/api/config/app'
+
+import { faker } from '@faker-js/faker'
+import { Collection } from 'mongodb'
+import request from 'supertest'
 
 let collection: Collection
 describe('Cliente Rotas', () => {

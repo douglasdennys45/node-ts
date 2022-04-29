@@ -1,10 +1,10 @@
 import './config/module-alias'
-import env from '@/infrastructure/server/api/config/env'
+
 import { MongoConnection } from '@/infrastructure/database/mongodb'
+import env from '@/infrastructure/server/api/config/env'
 
 MongoConnection.connect(env.mongoUrl)
   .then(async () => {
-    const app = (await import('@/infrastructure/server/api/config/app')).default
-    await app.start(+env.port)
-    console.log(`started server to host: ${env.host}`)
+    const { app } = await import('@/infrastructure/server/api/config/app')
+    app.listen(env.port, () => console.log(`Server running at http://localhost:${env.port}`))
   }).catch(err => console.error(err))

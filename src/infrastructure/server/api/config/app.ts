@@ -1,10 +1,11 @@
-import restana from 'restana'
-import setupRoutes from './routes'
-import setupMiddlewares from './middlewares'
+import { setupMiddlewares } from './middlewares'
+import { setupRoutes } from './routes'
 
-const app = restana()
+import express from 'express'
+
+const app = express()
 
 setupMiddlewares(app)
 setupRoutes(app)
 
-export default app
+export { app }

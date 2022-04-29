@@ -1,11 +1,13 @@
+import { Express, Router } from 'express'
 import { readdirSync } from 'fs'
+import { join } from 'path'
 
-export default (app: any): void => {
-  const router = app.newRouter()
-  app.use('/v1', router)
-  readdirSync(`${__dirname}/../routes`).map(async file => {
-    if (!file.includes('.test.') && !file.endsWith('.map')) {
+export const setupRoutes = (app: Express): void => {
+  const router = Router()
+  readdirSync(join(__dirname, '../routes'))
+    .filter(file => !file.endsWith('.map'))
+    .map(async file => {
       (await import(`../routes/${file}`)).default(router)
-    }
-  })
+    })
+  app.use('/v1', router)
 }

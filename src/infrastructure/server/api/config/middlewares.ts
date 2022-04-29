@@ -1,6 +1,8 @@
 import { bodyParser, newCors } from '@/infrastructure/server/api/middlewares'
 
-export default (app: any): void => {
+import { Express } from 'express'
+
+export const setupMiddlewares = (app: Express): void => {
   app.use(bodyParser)
   app.use(newCors)
 }

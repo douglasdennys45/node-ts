@@ -1,3 +1,3 @@
-import { json } from 'body-parser'
+import { json } from 'express'
 
 export const bodyParser = json()
