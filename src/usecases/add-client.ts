@@ -1,15 +1,11 @@
-import { AddClientRepository } from '@/ports'
 import { Client } from '@/entities'
+import { AddClientRepository } from '@/ports'
+import { Error } from './types'
 
 type Setup = (repo: AddClientRepository) => AddClient
 type Input = any
 type Output = {
-  error?: {
-    code: string
-    detail: string
-    status: number
-    title: string
-  },
+  error?: Error,
   value?: string
 }
 export type AddClient = (input: Input) => Promise<Output>
