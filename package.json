@@ -1,6 +1,6 @@
 {
-  "name": "boilerplate-node",
-  "version": "1.0.0",
+  "name": "node-ts",
+  "version": "1.5.0",
   "description": "Boilerplate to streamline the development process with some out-of-the-box use cases",
   "main": "build/index.js",
   "scripts": {
