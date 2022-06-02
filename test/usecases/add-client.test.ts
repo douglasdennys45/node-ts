@@ -1,7 +1,7 @@
-import { mock, MockProxy } from 'jest-mock-extended'
+import { AddClientRepository } from '@/domain/contracts'
+import { AddClient, setupAddClient } from '@/domain/usecases'
 import { faker } from '@faker-js/faker'
-import { AddClientRepository } from '@/ports'
-import { AddClient, setupAddClient } from '@/usecases'
+import { mock, MockProxy } from 'jest-mock-extended'
 
 describe('Caso de uso - Criação de cliente', () => {
   let payload: any

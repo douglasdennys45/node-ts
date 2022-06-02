@@ -1,5 +1,5 @@
+import { Client } from '@/domain/entities'
 import { faker } from '@faker-js/faker'
-import { Client } from '@/entities'
 
 const mockClientRequest = () => ({
   name: faker.name.firstName(),

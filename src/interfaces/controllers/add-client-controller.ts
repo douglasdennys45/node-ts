@@ -1,4 +1,4 @@
-import { AddClient } from '@/usecases'
+import { AddClient } from '@/domain/usecases'
 import { HttpRequest, HttpResponse, response } from '@/interfaces/presentations'
 import { Controller } from './controller'
 

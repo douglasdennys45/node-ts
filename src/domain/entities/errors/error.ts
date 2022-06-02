@@ -1,4 +1,4 @@
-import { Error as TypeError } from '@/entities/types'
+import { Error as TypeError } from '@/domain/entities/types'
 
 export class Error {
   constructor (private readonly error: TypeError) {}

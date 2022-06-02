@@ -1,5 +1,5 @@
+import { Error } from '@/domain/entities/errors'
 import { faker } from '@faker-js/faker'
-import { Error } from '@/entities/errors'
 
 const mockPayloadError = () => ({
   code: faker.name.jobType(),

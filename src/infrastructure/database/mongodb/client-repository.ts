@@ -1,4 +1,4 @@
-import { AddClientRepository } from '@/ports'
+import { AddClientRepository } from '@/domain/contracts'
 import { MongoConnection } from './mongo-connection'
 
 export class ClientRepository implements AddClientRepository {

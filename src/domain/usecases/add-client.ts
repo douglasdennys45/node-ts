@@ -1,5 +1,5 @@
-import { Client } from '@/entities'
-import { AddClientRepository } from '@/ports'
+import { AddClientRepository } from '@/domain/contracts'
+import { Client } from '@/domain/entities'
 import { Error } from './types'
 
 type Setup = (repo: AddClientRepository) => AddClient

@@ -1,5 +1,5 @@
-import { Error } from '@/entities/errors'
-import { ClientRequest, ClientResponse, Error as TypeError } from '@/entities/types'
+import { Error } from '@/domain/entities/errors'
+import { ClientRequest, ClientResponse, Error as TypeError } from '@/domain/entities/types'
 
 export class Client {
   constructor (private readonly client: ClientRequest) {}

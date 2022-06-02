@@ -1,4 +1,4 @@
-import { ClientRequest } from '@/entities/types'
+import { ClientRequest } from '@/domain/entities/types'
 
 export interface AddClientRepository {
   create(payload: AddClientRepository.Request): Promise<AddClientRepository.Response>
