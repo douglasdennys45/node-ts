@@ -1,5 +1,5 @@
 FROM node:16.15-alpine as builder
-LABEL maintainer="Douglas Dennys <douglasdennys@yahoo.com>"
+LABEL maintainer="Douglas Dennys <douglasdennys45@gmail.com>"
 WORKDIR /app
 COPY . .
 RUN npm i && npm run build
