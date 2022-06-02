@@ -6,19 +6,21 @@ Boilerplate to streamline the development process with some out-of-the-box use c
 ![App Screenshot](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
 
 ```bash
-├── docs                    # OpenAPI documentation folder
-├── src                     # Application source code folder
-│   ├── entities            # Class folder and business rule validators
-│   │   └── errors          # Class default errors
-│   ├── infrastructure      # Folder is made up of tools like database, UI, etc. In this layer, the idea is to have as little code as possible, just enough to interconnect the layers and inject the necessary implementations into the inner layers.
-│   │   ├── server          # Rest API configuration folder
-│   │   ├── database        # Database configuration folder
-│   ├── interfaces          # Folder for the purpose of converting data in the most accessible and convenient way possible for the entities and use cases
-│   │   ├── controllers     # Folder where it will receive the information formatted by the presentation and will process the use case information
-│   │   └── presentations   # Folder where you will convert standard input and output data
-│   ├── ports               # Folder that will indirectly connect the business layer with the external layer
-│   │   ├── repositories    # Repository interface folder, where it will link the business layer with the external layer
-│   └── usecases            # Folder that contains the most system-specific business rules. This is where all the system use cases are implemented
+├── docs                      # OpenAPI documentation folder
+├── test                      # Tests
+├── src                       # Application source code folder
+│   ├── domain                # Domain application  
+│   │   ├── entities          # Class folder and business rule validators
+│   │   │   └── errors        # Class default errors
+│   │   ├── contracts         # Folder that will indirectly connect the business layer with the external layer
+│   │   │   └── repositories  # Repository interface folder, where it will link the business layer with the external layer
+│   │   └── usecases          # Folder that contains the most system-specific business rules. This is where all the system use cases are implemented
+│   ├── infrastructure        # Folder is made up of tools like database, UI, etc. In this layer, the idea is to have as little code as possible, just enough to interconnect the layers and inject the necessary implementations into the inner layers.
+│   │   ├── server            # Rest API configuration folder
+│   │   ├── database          # Database configuration folder
+│   ├── interfaces            # Folder for the purpose of converting data in the most accessible and convenient way possible for the entities and use cases
+│   │   ├── controllers       # Folder where it will receive the information formatted by the presentation and will process the use case information
+│   │   └── presentations     # Folder where you will convert standard input and output data
 ```
 
 ## Requirements
