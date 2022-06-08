@@ -3,8 +3,8 @@ module.exports = {
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
     '!<rootDir>/src/**/index.ts',
-    '!<rootDir>/src/infrastructure/server/api/config/env.ts',
-    '!<rootDir>/src/infrastructure/server/api/config/module-alias.ts'
+    '!<rootDir>/src/infrastructure/api/config/env.ts',
+    '!<rootDir>/src/infrastructure/api/config/module-alias.ts'
   ],
   coverageDirectory: 'coverage',
   coverageProvider: 'babel',

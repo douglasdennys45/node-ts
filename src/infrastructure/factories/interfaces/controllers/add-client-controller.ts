@@ -1,4 +1,4 @@
-import { makeAddClient } from '@/infrastructure/server/api/factories/usecases'
+import { makeAddClient } from '@/infrastructure/factories/usecases'
 import { AddClientController, Controller } from '@/interfaces/controllers'
 
 export const makeAddClientController = (): Controller => {

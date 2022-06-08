@@ -1,4 +1,4 @@
-import { bodyParser, newCors } from '@/infrastructure/server/api/middlewares'
+import { bodyParser, newCors } from '@/infrastructure/middlewares'
 
 import { Express } from 'express'
 

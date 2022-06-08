@@ -1,5 +1,5 @@
 import { MongoConnection } from '@/infrastructure/database/mongodb'
-import { app } from '@/infrastructure/server/api/config/app'
+import { app } from '@/infrastructure/api/config/app'
 
 import { faker } from '@faker-js/faker'
 import { Collection } from 'mongodb'

@@ -1,4 +1,4 @@
-import { app } from '@/infrastructure/server/api/config/app'
+import { app } from '@/infrastructure/api/config/app'
 
 import faker from '@faker-js/faker'
 import request from 'supertest'
