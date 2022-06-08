@@ -1,6 +1,6 @@
 import './config/module-alias'
 
-import { MongoConnection } from '@/infrastructure/database/mongodb'
+import { MongoConnection } from '@/infrastructure/database'
 import env from '@/infrastructure/api/config/env'
 
 MongoConnection.connect(env.mongoUrl)
