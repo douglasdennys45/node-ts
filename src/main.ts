@@ -1,4 +1,4 @@
-import './config/module-alias'
+import './infrastructure/api/config/module-alias'
 
 import { MongoConnection } from '@/infrastructure/database'
 import env from '@/infrastructure/api/config/env'

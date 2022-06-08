@@ -6,8 +6,8 @@
   "author": "Douglas Dennys <douglasdennys45@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/infrastructure/server/api/index.ts",
-    "start": "node build/infrastructure/server/api/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/main.ts",
+    "start": "node build/main.js",
     "clean": "rimraf dist",
     "prepare": "husky install",
     "build": "npm run clean && tsc -p tsconfig-build.json",
