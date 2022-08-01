@@ -1,6 +1,6 @@
 import { app } from '@/infrastructure/api/config/app'
 
-import faker from '@faker-js/faker'
+import { faker } from '@faker-js/faker'
 import request from 'supertest'
 
 describe('Body Parser Middleware', () => {
