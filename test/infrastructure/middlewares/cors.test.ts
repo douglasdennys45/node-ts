@@ -1,4 +1,4 @@
-import { app } from '@/infrastructure/api/config/app'
+import { app } from '@/infrastructure/config/app'
 
 import request from 'supertest'
 

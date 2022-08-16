@@ -1,4 +1,4 @@
-import { adaptRoute } from '@/infrastructure/api/adapters'
+import { adaptRoute } from '@/infrastructure/adapters'
 import { makeAddClientController } from '@/infrastructure/factories/interfaces/controllers'
 
 import { Router } from 'express'
