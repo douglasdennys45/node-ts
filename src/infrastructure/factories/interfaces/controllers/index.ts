@@ -1,1 +1,1 @@
-export * from './add-client-controller'
+export * from './add-user-controller'

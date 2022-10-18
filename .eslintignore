@@ -1,6 +1,0 @@
-.env
-node_modules
-coverage
-app
-.idea
-.dccache

@@ -1,2 +1,2 @@
-export * from './client-repository'
-export * from './mongo-connection'
+export * from './connection'
+export * from './repositories'

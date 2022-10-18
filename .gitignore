@@ -1,9 +1,7 @@
-.env
-node_modules
 coverage
-coverage.out
-app
-.idea
-globalConfig.json
-.dccache
+node_modules
 build
+.idea
+.env
+.DS_Store
+globalConfig.json

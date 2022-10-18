@@ -1,22 +1,12 @@
-type Document = {
-  type: string
-  number: string
-}
-
-export type ClientRequest = {
-  name?: string
-  document?: Document[]
-  type?: string
-}
-
-export type Error = {
+export type TypeError = {
   code: string
-  detail: string
   status: number
   title: string
+  detail?: string
 }
 
-export type ClientResponse = {
-  value?: ClientRequest
-  error?: Error
+export type BaseUser = {
+  name: string
+  email: string
+  password: string
 }

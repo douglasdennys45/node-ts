@@ -1,1 +1,1 @@
-export * from './adapter-route'
+export * from './route-adapter'
