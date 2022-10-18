@@ -1,16 +1,17 @@
-export type HttpRequest = {
-  params?: any
-  query?: any
-  body?: any
-  headers?: any
-}
+import { TypeError } from '@/domain/entities'
+import { HttpResponse } from '@/interfaces/contracts'
 
-export type HttpResponse = {
-  error?: any
-  value?: any
-  status: number
-}
+export const created = (body: any): HttpResponse => ({
+  statusCode: 201,
+  body
+})
 
-export const response = (data: any, status: number): HttpResponse => {
-  return { error: data?.error, value: data?.value, status }
-}
+export const badRequest = (error: TypeError): HttpResponse => ({
+  statusCode: 400,
+  error
+})
+
+export const internalServerError = (error: TypeError): HttpResponse => ({
+  statusCode: 500,
+  error
+})

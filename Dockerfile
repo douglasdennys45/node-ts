@@ -1,4 +1,5 @@
-FROM node:16.15-alpine as builder
+
+FROM node:18.11-alpine as builder
 LABEL maintainer="Douglas Dennys <douglasdennys45@gmail.com>"
 WORKDIR /app
 COPY . .

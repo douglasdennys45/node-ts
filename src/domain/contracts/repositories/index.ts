@@ -1,1 +1,1 @@
-export * from './add-client-repository'
+export * from './add-user-repo'
